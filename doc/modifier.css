@@ -1,0 +1,21 @@
+/** body **/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #999999b4;
+}
+
+h1 a{
+    text-decoration: none;
+    color: white
+}
+
+/** header **/
+header {
+    background-color: #333;
+    padding: 2px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}

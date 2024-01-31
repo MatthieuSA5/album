@@ -1,0 +1,63 @@
+/** body **/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #999999b4;
+    
+}
+
+h1 a{
+    text-decoration: none;
+    color: white
+}
+
+/** header **/
+
+header {
+    background-color: #333;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+header img {
+    height: 25px;
+}
+
+/** main **/
+
+.pimg    {
+    padding: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 500px));
+    display:grid;
+    width: 90%;
+    filter: drop-shadow(0 0 0.75rem #6187a7);
+}
+
+main img{
+    height: 300px;
+    width: 424px;
+    margin: 15px;  
+    border-radius: 15px;
+}
+
+/** NAV **/
+
+nav a{
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+/** Bouton Modif **/
+
+.modif {
+    width: 60px;
+    height: 60px;
+}
+
+div {
+    object-fit: contain;
+}

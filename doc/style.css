@@ -4,7 +4,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #999999b4;
-    
 }
 
 h1 a{
@@ -15,7 +14,7 @@ h1 a{
 /** header **/
 
 header {
-    background-color: #333;
+    background-color: #333333;
     padding: 2px;
     text-align: center;
     text-decoration: none;
@@ -28,19 +27,12 @@ header img {
 
 /** main **/
 
-.pimg    {
-    padding: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 500px));
-    display:grid;
-    width: 90%;
-    filter: drop-shadow(0 0 0.75rem #6187a7);
-}
-
 main img{
     height: 300px;
     width: 424px;
     margin: 15px;  
     border-radius: 15px;
+    object-fit: cover;
 }
 
 /** NAV **/
@@ -51,13 +43,28 @@ nav a{
     font-weight: bold;
 }
 
-/** Bouton Modif **/
+/*modifier et supprimer les photo*/
 
-.modif {
-    width: 60px;
-    height: 60px;
+.photo-container {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
 }
 
-div {
-    object-fit: contain;
+.actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
+
+a {
+    margin-left: 5px;
+}
+
+.Icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 0px;
+}
+
+/*test*/

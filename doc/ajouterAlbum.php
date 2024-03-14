@@ -1,15 +1,13 @@
 <?php
 $msg='';
+include("fonction.php");
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Vérifier si le formulaire a été soumis
     if (isset($_POST['nom_album'])) {
         // Récupérer les données du formulaire
-        $cnx = mysqli_connect("localhost", "root", "", "album");
-        if (mysqli_connect_errno()) {
-            echo "Echec de la connexion : " . mysqli_connect_error();
-            exit();
-        }
+        
+        $cnx = connexion("localhost","root","","album");
 
         $nomAlbum = $_POST['nom_album'];
 
@@ -50,8 +48,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <h1><a href="index.php">Créer un nouvel album</a></h1>
         </header>
         <form method="POST" action="ajouterAlbum.php">
-            <label for="nom_album">Nom de l'album :</label>
-            <input type="text" id="nom_album" name="nom_album" required>
+            <div class="add">
+                <label for="nom_album">Nom de l'album :</label>
+                <input type="text" id="nom_album" name="nom_album" required>
+            </div>
             <button type="submit">Créer</button>
         </form>
         <?php echo $msg; ?>

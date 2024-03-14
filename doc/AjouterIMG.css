@@ -25,15 +25,23 @@ form {
     padding-top: 100px;
 }
 
-.add{
-    padding-bottom: 20px;
+/*personnalisation du bouton*/
+.bouton{
+     background-color: #b3ee10;
+     border-radius: 10px;
+     color: #ffffff;
+     font-size: 20px;
+     padding: 10px;
+     width: 180px;
 }
 
-button{
-    background-color: #b3ee10;
-    border-radius: 10px;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 5px;
-    width: 100px;
+.choix{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.clik{
+    display: flex;
+    text-align: center;
 }
